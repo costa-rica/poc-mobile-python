@@ -66,7 +66,7 @@ toolchain commands are particular to the folder where toolchain packages are ins
 ** note the gif shows the name of the Python Virtual Environment (aka venv) as "mindset03"
 
 ### Background on toolchain/ kivy-ios
-toolchain is both the (1) command and (2) pacakge/suite/collection of software availible in kivy-ios package. toolchain suite of software will will convert the python project (poc-mobile-python) to an Xcode project.
+toolchain is both the (1) command and (2) pacakge/suite/collection of software availible in kivy-ios package. toolchain suite of software will convert the python project (poc-mobile-python) to an Xcode project.
 
 ## Step 4: Create Xcode project
 Again from inside your KivyBuilds/ do the following command:
@@ -89,6 +89,8 @@ Prior to sending your application to the Apple App Store. The app must get sent 
 <img src="../stores_presence/ios_build/info_plist.gif" /> 
 2. info.plist, add key `ITSEncryptionHasNonStandardTypes` and value "No".
     - This is not necessary but it you will be asked about encryption types in App Store Connects. As the app stands there is no non-standard encryption.
+    - https://developer.apple.com/documentation/security/complying_with_encryption_export_regulations
+
 3. Add images Resources > AppIcon
     - Select iOS All Sizes
     - It is necessary to include iOS 76pt (152x152 pixels), iOS 83.5pt (167x167 pixels), and iOS 1,025pt (1024x1024 pixels)
